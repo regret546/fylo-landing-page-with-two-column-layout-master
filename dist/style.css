@@ -124,6 +124,12 @@ body {
 .fylo__main .fylo__main_form form input {
   border: 1px solid var(--clr--very-dark-blue);
 }
+.fylo__main .fylo__main_form form button {
+  cursor: pointer;
+}
+.fylo__main .fylo__main_form form button:hover {
+  opacity: 0.7;
+}
 .fylo__main .fylo__main_form form .btn-get-started {
   border: none;
   background-color: var(--clr--bright-blue);
@@ -181,6 +187,9 @@ body {
   font-size: 0.9rem;
   color: var(--clr--moderate-cyan);
 }
+.fylo__main_body_top_info a:hover {
+  opacity: 0.7;
+}
 .fylo__main_body_top_info a img {
   display: inline;
   vertical-align: middle;
@@ -231,5 +240,5 @@ body {
 }
 .fylo__main_body_bottom .fylo__main_form form input,
 .fylo__main_body_bottom .fylo__main_form form button {
-  padding: 0.6rem 0.9rem;
+  padding: 0.7rem 0.9rem;
 }/*# sourceMappingURL=style.css.map */
