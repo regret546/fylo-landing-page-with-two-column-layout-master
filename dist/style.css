@@ -112,6 +112,24 @@ body {
   gap: 2rem;
   display: grid;
 }
+.fylo__main .fylo__main_form form {
+  display: grid;
+  gap: 1rem;
+}
+.fylo__main .fylo__main_form form input,
+.fylo__main .fylo__main_form form button {
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+}
+.fylo__main .fylo__main_form form input {
+  border: 1px solid var(--clr--very-dark-blue);
+}
+.fylo__main .fylo__main_form form .btn-get-started {
+  border: none;
+  background-color: var(--clr--bright-blue);
+  color: var(--clr--white);
+  font-weight: var(--fw--very-bold);
+}
 .fylo__main_header nav {
   padding: 1rem 0;
   display: flex;
@@ -149,21 +167,69 @@ body {
 .fylo__main_header_content p {
   font-size: 1.1rem;
 }
-.fylo__main_header_content_form form {
+.fylo__main_body {
+  display: grid;
+  gap: 2rem;
+  padding-inline: 1rem;
+  text-align: center;
+}
+.fylo__main_body_top_info {
   display: grid;
   gap: 1rem;
 }
-.fylo__main_header_content_form form input,
-.fylo__main_header_content_form form button {
-  padding: 0.8rem;
-  border-radius: 0.3rem;
+.fylo__main_body_top_info a {
+  font-size: 0.9rem;
+  color: var(--clr--moderate-cyan);
 }
-.fylo__main_header_content_form form input {
-  border: 1px solid var(--clr--very-dark-blue);
+.fylo__main_body_top_info a img {
+  display: inline;
+  vertical-align: middle;
 }
-.fylo__main_header_content_form form .btn-get-started {
-  border: none;
-  background-color: var(--clr--bright-blue);
+.fylo__main_body_top_info .ceo-testimonial {
+  text-align: left;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+.fylo__main_body_top_info .ceo-testimonial img {
+  margin-bottom: 1rem;
+}
+.fylo__main_body_top_info .ceo-testimonial .ceo-profile {
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+  font-size: 0.7rem;
+  align-items: center;
+}
+.fylo__main_body_top_info .ceo-testimonial .ceo-profile img {
+  margin-bottom: 0;
+  display: inline;
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+}
+.fylo__main_body_bottom {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
   color: var(--clr--white);
-  font-weight: var(--fw--very-bold);
+  padding: 3rem;
+  background-color: var(--clr--desaturated-blue);
+  margin-inline: -11%;
+}
+.fylo__main_body_bottom div {
+  display: grid;
+  gap: 1rem;
+}
+.fylo__main_body_bottom div h2 {
+  font-size: 1rem;
+}
+.fylo__main_body_bottom div p {
+  font-size: 0.94rem;
+}
+.fylo__main_body_bottom .fylo__main_form form {
+  font-size: 0.9rem;
+}
+.fylo__main_body_bottom .fylo__main_form form input,
+.fylo__main_body_bottom .fylo__main_form form button {
+  padding: 0.6rem 0.9rem;
 }/*# sourceMappingURL=style.css.map */
