@@ -1,7 +1,12 @@
 .fylo__main {
-  padding: 1rem;
-  gap: 2rem;
   display: grid;
+
+  &_header,
+  &_body,
+  &_footer {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
 
   .fylo__main_form {
     form {
@@ -79,10 +84,11 @@
   &_body {
     display: grid;
     gap: 2rem;
-    padding-inline: 1rem;
     text-align: center;
-
+    padding: 0;
+    margin-bottom: 0;
     &_top {
+      padding-inline: 2rem;
       &_info {
         display: grid;
         gap: 1rem;
@@ -128,7 +134,7 @@
       color: var(--clr--white);
       padding: 3rem;
       background-color: var(--clr--desaturated-blue);
-      margin-inline: -11%;
+
       div {
         display: grid;
         gap: 1rem;
@@ -151,5 +157,12 @@
         }
       }
     }
+  }
+  &_footer {
+    padding: 2rem;
+    background-color: var(--clr--very-dark-blue);
+    color: var(--clr--white);
+    display: grid;
+    gap: 2rem;
   }
 }
