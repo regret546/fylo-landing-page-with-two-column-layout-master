@@ -4,17 +4,23 @@
   &_header,
   &_body,
   &_footer {
+    display: grid;
     padding: 1rem;
     margin-bottom: 2rem;
   }
 
   .fylo__main_form {
+    width: 100%;
+    max-width: 540px;
+
     form {
       display: grid;
+      justify-items: center;
       gap: 1rem;
 
       input,
       button {
+        width: 100%;
         padding: 0.8rem;
         border-radius: 0.3rem;
       }
@@ -68,6 +74,7 @@
       padding: 1rem;
       display: grid;
       text-align: center;
+      justify-items: center;
       gap: 1rem;
 
       h1 {
@@ -129,6 +136,7 @@
     }
     &_bottom {
       display: grid;
+      justify-items: center;
       gap: 1rem;
       text-align: center;
       color: var(--clr--white);
@@ -214,6 +222,53 @@
           width: 38px;
           border-radius: 38px;
           border: 1px solid var(--clr--white);
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 985px) {
+    &_header {
+      max-width: 1200px;
+      nav {
+        ul {
+          justify-content: flex-end;
+          gap: 2.5rem;
+        }
+        img {
+          cursor: pointer;
+          width: 135px;
+          height: 45px;
+        }
+      }
+      &_content {
+        text-align: left;
+        display: flex;
+        flex-direction: row-reverse;
+
+        h1 {
+          font-size: 2rem;
+        }
+        &_info,
+        img {
+          width: 50%;
+        }
+        &_info {
+          display: grid;
+          gap: 1rem;
+          align-self: center;
+
+          .fylo__main_form {
+            form {
+              display: flex;
+              input {
+                width: 60%;
+              }
+              button {
+                width: 40%;
+              }
+            }
+          }
         }
       }
     }

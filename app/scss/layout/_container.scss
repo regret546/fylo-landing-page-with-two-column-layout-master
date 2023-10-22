@@ -1,4 +1,7 @@
 .container {
+  display: grid;
+  place-items: center;
+
   ul {
     padding: 0;
     li {
