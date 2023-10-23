@@ -101,7 +101,11 @@
         gap: 1rem;
         a {
           font-size: 0.9rem;
+          margin-right: auto;
           color: var(--clr--moderate-cyan);
+          text-decoration: none;
+          line-height: 1rem;
+          border-bottom: 1px solid var(--clr--moderate-cyan);
           &:hover {
             opacity: 0.7;
           }
@@ -228,8 +232,13 @@
   }
 
   @media only screen and (min-width: 985px) {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+
     &_header {
       max-width: 1200px;
+      margin-bottom: 10rem;
       nav {
         ul {
           justify-content: flex-end;
@@ -271,6 +280,43 @@
           }
         }
       }
+    }
+
+    &_body {
+      display: grid;
+      justify-items: center;
+      width: 100%;
+
+      &_top {
+        max-width: 1200px;
+        text-align: left;
+        &_info {
+          display: flex;
+          flex-direction: row-reverse;
+
+          h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+          }
+
+          div:nth-of-type(2) {
+            display: grid;
+            gap: 0.8rem;
+          }
+
+          .ceo-testimonial {
+            width: 70%;
+            margin-top: 1rem;
+          }
+        }
+      }
+      &_bottom {
+        width: 100%;
+      }
+    }
+
+    &_footer {
+      width: 100%;
     }
   }
 }
