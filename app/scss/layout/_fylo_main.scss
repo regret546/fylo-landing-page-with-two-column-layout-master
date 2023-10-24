@@ -20,6 +20,7 @@
 
       input,
       button {
+        text-decoration: none;
         width: 100%;
         padding: 0.8rem;
         border-radius: 0.3rem;
@@ -84,6 +85,11 @@
 
       p {
         font-size: 1.1rem;
+      }
+
+      &_info {
+        display: grid;
+        justify-items: center;
       }
     }
   }
@@ -311,7 +317,39 @@
         }
       }
       &_bottom {
+        display: flex;
+        justify-content: center;
+        text-align: left;
         width: 100%;
+        padding: 5rem;
+
+        div {
+          max-width: 600px;
+        }
+
+        div:nth-of-type(1) {
+          h2 {
+            font-size: 2rem;
+          }
+          p {
+            width: 70%;
+          }
+        }
+
+        .fylo__main_form {
+          form {
+            justify-items: left;
+            font-size: 0.9rem;
+
+            input,
+            button {
+              padding: 0.7rem 0.9rem;
+            }
+            button {
+              width: 45%;
+            }
+          }
+        }
       }
     }
 

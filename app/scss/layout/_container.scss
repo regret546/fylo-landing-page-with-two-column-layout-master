@@ -8,4 +8,12 @@
       list-style-type: none;
     }
   }
+
+  h1,
+  h2,
+  button,
+  input,
+  nav {
+    font-family: var(--ff--secondary);
+  }
 }
