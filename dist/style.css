@@ -284,40 +284,40 @@ body {
   gap: 2rem;
   margin: 0;
 }
-.fylo__main_footer ul li {
+.fylo__main_footer_content ul li {
   cursor: pointer;
 }
-.fylo__main_footer_top img {
+.fylo__main_footer_content_top img {
   margin-bottom: 1.5rem;
 }
-.fylo__main_footer_top p {
+.fylo__main_footer_content_top p {
   display: flex;
   align-items: center;
 }
-.fylo__main_footer_top p img {
+.fylo__main_footer_content_top p img {
   margin: 0;
   display: inline;
   margin-right: 1rem;
 }
-.fylo__main_footer_top p:nth-of-type(1) {
+.fylo__main_footer_content_top p:nth-of-type(1) {
   margin-bottom: 0.8rem;
 }
-.fylo__main_footer_middle, .fylo__main_footer_bottom {
+.fylo__main_footer_content_middle, .fylo__main_footer_content_bottom {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
 }
-.fylo__main_footer .social-media {
+.fylo__main_footer_content .social-media {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
-.fylo__main_footer .social-media a {
+.fylo__main_footer_content .social-media a {
   text-decoration: none;
 }
-.fylo__main_footer .social-media a i {
+.fylo__main_footer_content .social-media a i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -338,6 +338,9 @@ body {
     max-width: 1200px;
     margin-bottom: 10rem;
   }
+  .fylo__main_header nav {
+    margin-bottom: 2rem;
+  }
   .fylo__main_header nav ul {
     justify-content: flex-end;
     gap: 2.5rem;
@@ -353,7 +356,7 @@ body {
     flex-direction: row-reverse;
   }
   .fylo__main_header_content h1 {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
   .fylo__main_header_content_info,
   .fylo__main_header_content img {
@@ -363,6 +366,7 @@ body {
     display: grid;
     gap: 1rem;
     align-self: center;
+    justify-items: left;
   }
   .fylo__main_header_content_info .fylo__main_form form {
     display: flex;
@@ -383,6 +387,7 @@ body {
     text-align: left;
   }
   .fylo__main_body_top_info {
+    margin: 5rem 0;
     display: flex;
     flex-direction: row-reverse;
   }
@@ -403,7 +408,7 @@ body {
     justify-content: center;
     text-align: left;
     width: 100%;
-    padding: 5rem;
+    padding: 6rem;
   }
   .fylo__main_body_bottom div {
     max-width: 600px;
@@ -427,5 +432,21 @@ body {
   }
   .fylo__main_footer {
     width: 100%;
+    justify-items: center;
+  }
+  .fylo__main_footer_content {
+    margin: 10rem 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .fylo__main_footer_content_top {
+    margin-top: -5%;
+  }
+  .fylo__main_footer_content ul,
+  .fylo__main_footer_content .social-media {
+    align-self: start;
+    margin-top: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -183,55 +183,56 @@
     display: grid;
     gap: 2rem;
     margin: 0;
-
-    ul {
-      li {
-        cursor: pointer;
-      }
-    }
-
-    &_top {
-      img {
-        margin-bottom: 1.5rem;
-      }
-      p {
-        display: flex;
-        align-items: center;
-        img {
-          margin: 0;
-          display: inline;
-          margin-right: 1rem;
+    &_content {
+      ul {
+        li {
+          cursor: pointer;
         }
       }
-      p:nth-of-type(1) {
-        margin-bottom: 0.8rem;
-      }
-    }
 
-    &_middle,
-    &_bottom {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 0.5rem;
-    }
-    .social-media {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-      a {
-        text-decoration: none;
-        i {
+      &_top {
+        img {
+          margin-bottom: 1.5rem;
+        }
+        p {
           display: flex;
-          justify-content: center;
           align-items: center;
-          font-size: 20px;
-          color: var(--clr--white);
-          height: 38px;
-          width: 38px;
-          border-radius: 38px;
-          border: 1px solid var(--clr--white);
+          img {
+            margin: 0;
+            display: inline;
+            margin-right: 1rem;
+          }
+        }
+        p:nth-of-type(1) {
+          margin-bottom: 0.8rem;
+        }
+      }
+
+      &_middle,
+      &_bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+      .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        a {
+          text-decoration: none;
+          i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: var(--clr--white);
+            height: 38px;
+            width: 38px;
+            border-radius: 38px;
+            border: 1px solid var(--clr--white);
+          }
         }
       }
     }
@@ -246,6 +247,7 @@
       max-width: 1200px;
       margin-bottom: 10rem;
       nav {
+        margin-bottom: 2rem;
         ul {
           justify-content: flex-end;
           gap: 2.5rem;
@@ -262,7 +264,7 @@
         flex-direction: row-reverse;
 
         h1 {
-          font-size: 2rem;
+          font-size: 2.3rem;
         }
         &_info,
         img {
@@ -272,6 +274,7 @@
           display: grid;
           gap: 1rem;
           align-self: center;
+          justify-items: left;
 
           .fylo__main_form {
             form {
@@ -297,6 +300,7 @@
         max-width: 1200px;
         text-align: left;
         &_info {
+          margin: 5rem 0;
           display: flex;
           flex-direction: row-reverse;
 
@@ -321,7 +325,7 @@
         justify-content: center;
         text-align: left;
         width: 100%;
-        padding: 5rem;
+        padding: 6rem;
 
         div {
           max-width: 600px;
@@ -355,6 +359,23 @@
 
     &_footer {
       width: 100%;
+      justify-items: center;
+      &_content {
+        margin: 10rem 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+
+        &_top {
+          margin-top: -5%;
+        }
+        ul,
+        .social-media {
+          align-self: start;
+          margin-top: 10px;
+        }
+      }
     }
   }
 }
