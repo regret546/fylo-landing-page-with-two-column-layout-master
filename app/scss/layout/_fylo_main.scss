@@ -45,10 +45,11 @@
     }
   }
   &_header {
+    margin-bottom: 6rem;
     nav {
       padding: 1rem 0;
       display: flex;
-
+      margin-bottom: 1.5rem;
       justify-content: space-between;
       align-items: center;
       img {
@@ -59,11 +60,12 @@
 
       ul {
         display: flex;
+        font-size: 1rem;
         justify-content: space-between;
         width: 55%;
         li {
           cursor: pointer;
-          font-size: 1rem;
+          font-size: 0.8rem;
           a {
             color: var(--clr--very-dark-blue);
             text-decoration: none;
@@ -76,7 +78,7 @@
       display: grid;
       text-align: center;
       justify-items: center;
-      gap: 1rem;
+      gap: 2rem;
 
       h1 {
         font-size: 1.5rem;
@@ -89,6 +91,7 @@
 
       &_info {
         display: grid;
+        gap: 1.5rem;
         justify-items: center;
       }
     }
@@ -102,9 +105,11 @@
     margin-bottom: 0;
     &_top {
       padding-inline: 2rem;
+
       &_info {
         display: grid;
-        gap: 1rem;
+        gap: 4rem;
+
         a {
           font-size: 0.9rem;
           margin-right: auto;
@@ -120,12 +125,28 @@
             vertical-align: middle;
           }
         }
+        div:nth-of-type(2) {
+          text-align: left;
+          display: grid;
+          gap: 1rem;
+          h2 {
+            font-size: 1.2rem;
+            text-align: center;
+          }
+
+          a {
+            margin-inline: auto;
+          }
+        }
         .ceo-testimonial {
+          display: grid;
+          justify-items: flex-start;
+          margin-bottom: 2rem;
           img {
             margin-bottom: 1rem;
           }
           text-align: left;
-          padding: 1rem;
+          padding: 1.5rem;
           font-size: 0.9rem;
           .ceo-profile {
             margin: 1rem 0;
@@ -180,10 +201,10 @@
     padding: 2rem;
     background-color: var(--clr--very-dark-blue);
     color: var(--clr--white);
-    display: grid;
-    gap: 2rem;
     margin: 0;
     &_content {
+      display: grid;
+      gap: 2rem;
       ul {
         li {
           cursor: pointer;

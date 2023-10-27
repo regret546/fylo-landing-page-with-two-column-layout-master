@@ -157,9 +157,13 @@ body {
   color: var(--clr--white);
   font-weight: var(--fw--very-bold);
 }
+.fylo__main_header {
+  margin-bottom: 6rem;
+}
 .fylo__main_header nav {
   padding: 1rem 0;
   display: flex;
+  margin-bottom: 1.5rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -170,12 +174,13 @@ body {
 }
 .fylo__main_header nav ul {
   display: flex;
+  font-size: 1rem;
   justify-content: space-between;
   width: 55%;
 }
 .fylo__main_header nav ul li {
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .fylo__main_header nav ul li a {
   color: var(--clr--very-dark-blue);
@@ -186,7 +191,7 @@ body {
   display: grid;
   text-align: center;
   justify-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 .fylo__main_header_content h1 {
   font-size: 1.5rem;
@@ -197,6 +202,7 @@ body {
 }
 .fylo__main_header_content_info {
   display: grid;
+  gap: 1.5rem;
   justify-items: center;
 }
 .fylo__main_body {
@@ -211,7 +217,7 @@ body {
 }
 .fylo__main_body_top_info {
   display: grid;
-  gap: 1rem;
+  gap: 4rem;
 }
 .fylo__main_body_top_info a {
   font-size: 0.9rem;
@@ -228,9 +234,24 @@ body {
   display: inline;
   vertical-align: middle;
 }
-.fylo__main_body_top_info .ceo-testimonial {
+.fylo__main_body_top_info div:nth-of-type(2) {
   text-align: left;
-  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+.fylo__main_body_top_info div:nth-of-type(2) h2 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.fylo__main_body_top_info div:nth-of-type(2) a {
+  margin-inline: auto;
+}
+.fylo__main_body_top_info .ceo-testimonial {
+  display: grid;
+  justify-items: flex-start;
+  margin-bottom: 2rem;
+  text-align: left;
+  padding: 1.5rem;
   font-size: 0.9rem;
 }
 .fylo__main_body_top_info .ceo-testimonial img {
@@ -280,9 +301,11 @@ body {
   padding: 2rem;
   background-color: var(--clr--very-dark-blue);
   color: var(--clr--white);
+  margin: 0;
+}
+.fylo__main_footer_content {
   display: grid;
   gap: 2rem;
-  margin: 0;
 }
 .fylo__main_footer_content ul li {
   cursor: pointer;
